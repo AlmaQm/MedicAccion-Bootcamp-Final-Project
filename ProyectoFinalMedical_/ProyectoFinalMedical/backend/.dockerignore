@@ -1,0 +1,75 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python environments
+env/
+venv/
+.venv
+ENV/
+env.bak/
+venv.bak/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Django / SQLite
+*.sqlite3
+db.sqlite3
+staticfiles/
+media/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.idea/
+.vscode/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+railway.json
+
+# OS files
+.DS_Store
+
+# Node / frontend
+node_modules/
+Frontend/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# PEP 582 / Pyflow
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# MkDocs
+/site
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Cython
+cython_debug/

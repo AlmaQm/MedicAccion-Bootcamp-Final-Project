@@ -1,0 +1,190 @@
+/* CAMARA CSS */
+/*Se tiene que quitar no sirve*/
+:root {
+  --bg-color-custom: #f1f1f1;
+  --light-grey-custom: #CCC;
+  --medium-grey-custom: #666;
+  --dark-grey-custom: #4a768e;
+  --text-color-custom: #010101;
+  --border-radius-lg-custom: 30px;
+  --border-radius-sm-custom: 8px;
+}
+
+.camera-ocr-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.camera-ocr-video-container-result{
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 35vh;
+  margin-bottom: 100px;
+  top: 100px;
+}
+
+.camera-ocr-video-container-informe {
+  position: relative;
+  width: 100%;
+  max-width: 600px;      
+  height: 90vh;           
+  margin: 20px auto;      
+}
+
+.camera-cargando{
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  /* Contenedor del video principal */
+  .camera-ocr-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 95%;      /* ocupa casi toda la pantalla */
+    height: auto;        /* altura automática según proporción del video */
+    aspect-ratio: 16/9;  /* mantiene proporción estándar */
+    margin: 0 auto 20px auto; /* centrado y margen inferior */
+  }
+
+  /* Contenedor del informe */
+  .camera-ocr-video-container-informe {
+    width: 100%;
+    max-width: 95%;      /* ocupa casi toda la pantalla */
+    height: auto;        /* altura automática */
+    min-height: 50vh;    /* asegura altura mínima */
+    margin: 20px auto 40px auto; /* centrado con espacio inferior */
+  }
+
+  .camera-cargando{
+    position: relative;
+    width: 100%;
+    max-width: 95%;
+    height: auto;
+    min-height: 60vh;
+    margin: 20px auto 40px auto;
+  }
+}
+
+.camera-ocr-video {
+  width: 100%;
+  border-radius: var(--border-radius-sm-custom);
+  height: auto;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .camera-ocr-video {
+    max-height: 45vh;
+  }
+}
+
+.camera-ocr-result {
+  white-space: pre-wrap;
+  padding: 10px;
+  width: 100%;
+  word-wrap: break-word;
+  margin-top: 30px;
+}
+
+.camera-ocr-canvas {
+  display: none;
+}
+
+/*div botones*/
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.camera-ocr-button-activate {
+  width: 10vw;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--dark-grey-custom);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+  min-width: 140px;
+}
+
+.camera-ocr-button-activate:hover {
+  background-color: #7c4dff
+}
+
+.camera-ocr-button {
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: var(--border-radius-sm-custom);
+  border: none;
+  background-color: var(--dark-grey-custom);
+  color: white;
+  cursor: pointer;
+}
+
+.camera-ocr-button:hover {
+  background-color: var(--medium-grey-custom);
+}
+
+.overlay-img {
+  position: absolute;
+  /* Posicionamiento sobre el video */
+  top: 0;
+  /* Ajusta según necesites */
+  left: 0;
+  /* Ajusta según necesites */
+  width: 100%;
+  /* O el tamaño que quieras */
+  height: 100%;
+  /* O el tamaño que quieras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  /* Para que no bloquee clics */
+  margin-top: 80px;
+}
+
+.overlay-img img {
+  width: 230px;
+  /* Ajusta el tamaño de tu logo QR */
+  height: 180px;
+  object-fit: contain;
+}
+
+.camera-ocr-instructions {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--medium-grey-custom);
+}
+
+.instrucciones {
+  margin-top: 120px;
+  text-align: center;
+  color: var(--medium-grey-custom);
+}
+
+h3 {
+  margin-bottom: 100px;
+}
+
+ol {
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+li {
+  margin-bottom: 10px;
+}

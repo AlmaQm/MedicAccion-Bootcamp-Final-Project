@@ -1,0 +1,342 @@
+/* --- VARIABLES DE ESTILO GLOBAL (REPLICADAS DEL CALENDARIO) --- */
+:root {
+
+    --color-primary-violet: #5e989e;
+    --color-accent-amber: #f59e0b;
+    --color-card-green: #f59e0b;
+    --color-text-gray: #6b7280;
+    /* Gris para texto secundario */
+    --color-bg-light: #f3f4f6;
+    /* Gris muy claro para fondo de tarjetas */
+    --color-gray-dark: #1f2937;
+    /* Gris muy oscuro para texto principal */
+    --color-gray-light: #e5e7eb;
+    --color-red-danger: #ef4444;
+    /* Rojo para botones de bloqueo/peligro */
+
+    /* Variables estructurales */
+    --border-radius-main: 16px;
+    /* Más grande para el look de bienestar */
+    --border-radius-small: 10px;
+    --shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* CONTENEDOR PRINCIPAL*/
+.progress-screen-custom {
+    /* Aseguramos el tamaño de "tarjeta móvil y centrado */
+    min-height: 100vh;
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    align-items: center;
+    margin-top: 1rem;
+    /* Alma-importante este tamaño en todos 1.25rem */
+    padding: 20px 15px;
+    box-shadow: var(--shadow-light);
+    font-family: 'Inter', sans-serif;
+    color: #374151;
+
+}
+
+/* ENCABEZADO (ESQUELETO)*/
+.header-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 1rem;
+}
+
+.icon-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    background-color: var(--color-bg-light);
+    /* Fondo suave */
+    box-shadow: var(--shadow-light);
+    color: #374151;
+    cursor: pointer;
+}
+
+.header-icon-right {
+    border-radius: var(--border-radius-small);
+    /* Para el ícono de "documento" */
+}
+
+/* CONTENIDO DE PROGRESO */
+.progress-container-custom {
+    padding: 0 5px;
+    font-size: 1.25rem;
+}
+
+.progress-title-custom {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #374151;
+    margin-bottom: 10px;
+    /* Reducido para acercar el subtítulo */
+}
+
+/* SUBTÍTULO --- */
+.progress-subtitle-custom {
+    font-size: 1rem;
+    color: var(--color-text-gray);
+    margin-bottom: 30px;
+    /* Espacio después del subtítulo */
+    line-height: 1.4;
+}
+
+/* Barras de Progreso*/
+.progress-bars-custom {
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.progress-bar-short-custom,
+.progress-bar-long-custom {
+    height: 6px;
+    background-color: var(--color-gray-light);
+    /* Color base gris claro */
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-short-custom {
+    width: 40%;
+    background-color: var(--color-primary-violet);
+    /* Simula el progreso completado */
+}
+
+.progress-bar-long-custom {
+    width: 65%;
+    background-color: var(--color-accent-amber);
+    /* Simula otro progreso completado */
+}
+
+
+/* TARJETAS DE PREMIOS (AwardCard)*/
+
+.award-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+.award-card {
+    background-color: var(--color-bg-light);
+    padding: 20px;
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    /* Altura mínima para una buena presencia */
+}
+
+.award-info {
+    margin-bottom: 15px;
+}
+
+.award-icon {
+    margin-bottom: 10px;
+}
+
+.award-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-gray-dark);
+    margin-bottom: 5px;
+}
+
+.award-description {
+    font-size: 0.9rem;
+    color: var(--color-text-gray);
+    line-height: 1.4;
+}
+
+/* Estado de la Tarjeta Bloqueada */
+.award-card.locked {
+    opacity: 0.6;
+    border: 2px solid var(--color-gray-light);
+}
+
+/* Botón de Canje */
+.redeem-btn {
+    padding: 12px;
+    border: none;
+    border-radius: var(--border-radius-small);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Botón Activo*/
+.redeem-btn.active {
+    background-color: var(--color-primary-violet);
+    color: white;
+}
+
+.redeem-btn.active:hover {
+    background-color: #7c4dff;
+    transform: translateY(-1px);
+}
+
+/* Botón Desactivado (Gris) */
+.redeem-btn.disabled {
+    background-color: var(--color-gray-light);
+    color: var(--color-text-gray);
+    cursor: not-allowed;
+}
+
+/* MODAL DE PREMIO*/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(31, 41, 55, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: var(--border-radius-main);
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: var(--color-card-green);
+    margin-bottom: 15px;
+}
+
+.modal-message {
+    font-size: 1rem;
+    color: var(--color-gray-dark);
+    margin-bottom: 15px;
+}
+
+.prize-code {
+    background-color: var(--color-bg-light);
+    color: var(--color-primary-violet);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: var(--border-radius-small);
+    margin-bottom: 25px;
+    border: 1px dashed var(--color-primary-violet);
+    letter-spacing: 1px;
+}
+
+.modal-close-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary-violet);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.modal-close-btn:hover {
+    background-color: #7c4dff;
+}
+
+/* ===== SWITCH DE VISTAS (Premios / Progresos) ===== */
+.progress-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* centra los botones horizontalmente */
+}
+
+.tab-btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--color-gray-light);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+    font-weight: 700;
+    color: var(--color-gray-dark);
+    display: inline-flex;
+    justify-content: center;
+    /* centra el texto dentro del botón */
+    align-items: center;
+    min-width: 120px;
+    /* ancho mínimo para que los botones queden centrados visualmente */
+    text-align: center;
+}
+
+.tab-btn:hover {
+    background: #f9fafb;
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-3px);
+    border-color: #4e9a99;
+    /* mismo color que sticky-btn.active */
+}
+
+@media (max-width: 600px) {
+    .tab-btn {
+        padding: 6px 10px;
+        font-size: 0.95rem;
+        min-width: 90px;
+    }
+}
+
+/* Pie chart styles */
+.pie-chart svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.pie-chart .slice {
+    transition: transform 0.18s ease;
+}
+
+.pie-chart .slice.active {
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.12));
+}
+
+.pie-chart div {
+    color: #374151;
+}

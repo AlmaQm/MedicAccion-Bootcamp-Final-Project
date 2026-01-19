@@ -1,0 +1,188 @@
+/* * -----------------------------------
+   ESTILOS GLOBALES Y CONTENEDOR PRINCIPAL
+-------------------------------------- */
+:root {
+  --primary-color: #000000;
+  /* Color principal para acentos */
+  --secondary-color: #000000;
+  /* Color más claro para fondos */
+  --background-color: #000000;
+  --shadow-light: 0 1px 4px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.15);
+  /*CAMERA TESSERACT*/
+  --bg-color-custom: #f1f1f1;
+  --light-grey-custom: #CCC;
+  --medium-grey-custom: #666;
+  --dark-grey-custom: #4a768e;
+  --text-color-custom: #010101;
+  --border-radius-lg-custom: 30px;
+  --border-radius-sm-custom: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0d0f25;
+}
+
+.waves {
+  position: absolute;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  height: 50%;
+  top: -25%;
+  left: -15%;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 200, 0.25), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(0, 120, 255, 0.22), transparent 60%);
+  animation: swirl 60s infinite linear;
+  filter: blur(60px);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ========== TIPOGRAFÍA ========== */
+h1 {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* IMPORTANTE LAS MEDIDAS DE TODA LA APP POR PANTALLA*/
+
+.main-app {
+  min-height: 100vh;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #f9fafb;
+  max-width: 28rem;
+  border-radius: 20px;
+}
+
+/* ========== BOTONES ========== */
+button,
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn-primary:hover {
+  background-color: var(--color-highlight);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #root {
+    padding: 2rem;
+  }
+}
+
+/*Header chatbox, logo y logout*/
+.header-components {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  
+}
+
+.header-logo-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 10px;
+}
+.header-logo{
+  margin-top: 1rem;
+  /* Alma-1rem para que no quede tan pegado arriba */
+  height: 42px;
+  width: auto;
+}
+
+.header-logo-wrapper .header-logo {
+  transition: transform 0.2s ease;
+}
+
+.header-logo-wrapper:hover .header-logo {
+  transform: scale(1.2);
+}
+
+.header-icon-chat {
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  margin-top: 1rem;
+}
+
+.header-icon-chat .message-circle {
+  transition: transform 0.2s ease;
+}
+
+.header-icon-chat:hover .message-circle {
+  transform: scale(1.2);
+}
+
+.header-icon-logout {
+  color: rgb(0, 0, 0);
+  padding: 1px;
+  margin-top: 1rem;
+}
+
+.header-icon-logout .header-logout {
+  transition: transform 0.2s ease;
+}
+
+.header-icon-logout:hover .header-logout {
+  transform: scale(1.2);
+}

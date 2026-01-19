@@ -1,0 +1,253 @@
+/* ====== Estas 3 líneas son nuevas y necesarias ====== */
+.day.today-highlight {
+  border: 3px solid orange !important;
+  border-radius: 12px !important;
+}
+
+/* ====== FIN ZONA NUEVA ====== */
+
+/* ==== Calendario ==== */
+/* ==== Mobile-first layout ==== */
+.calendar-app {
+  --bg-color-custom: #f1f1f1;
+  --light-grey-custom: #CCC;
+  --medium-grey-custom: #666;
+  --dark-grey-custom: #4a768e;
+  --text-color-custom: #010101;
+  --border-radius-lg-custom: 30px;
+  --border-radius-sm-custom: 8px;
+
+  background-color: #fff;
+  color: #000;
+  min-height: calc(100vh - 80px);
+  width: 375px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ==== Header ==== */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #374151;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: #659fa6;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ==== Calendar grid ==== */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  text-align: center;
+}
+
+.day-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.day {
+  background: #f9fcfc;
+  border-radius: 12px;
+  padding: 8px 0;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.day:hover {
+  background-color: #659fa6;
+  color: white;
+  cursor: pointer;
+}
+
+.day.selected {
+  background-color: #659fa6;
+  color: white;
+}
+
+.day.has-meds {
+  background-color: #e1f4f7;
+}
+
+/* ==== Medication section ==== */
+.med-section {
+  margin-top: 1.5rem;
+  background: #f6fbfb;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  border: 1px solid #659fa6;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1rem;
+  width: 100%;
+
+
+}
+
+.input-group button {
+  background-color: #659fa6;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #7c4dff;
+}
+
+/* ==== Medication list ==== */
+.med-list {
+  margin-top: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.med-list li {
+  background-color: #e1f4f7;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* ==== Desktop view ==== */
+@media (min-width: 600px) {
+  .calendar-app {
+    max-width: 700px;
+    padding: 24px;
+  }
+
+  .calendar-grid {
+    gap: 10px;
+  }
+
+  .day {
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+
+  .input-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .input-group input {
+    flex: 1;
+  }
+
+  .input-group button {
+    width: auto;
+  }
+}
+
+/* ==== Floating button ==== */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #659fa6;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s ease, box-shadow 0.3s;
+}
+
+.floating-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(101, 159, 166, 0.6);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 12px rgba(101, 159, 166, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(101, 159, 166, 0);
+  }
+}
+
+.floating-btn.activo {
+  animation: pulso 1.8s infinite;
+}
+
+/* ==== Estados del calendario ==== */
+.dia-completo {
+  background-color: #10b981 !important;
+  color: #000;
+}
+
+.dia-incompleto {
+  background-color: #f30000 !important;
+  color: #fff;
+}
+
+.dia-registrado {
+  background-color: #659FA6 !important;
+  /* Azul */
+  color: #fff;
+}
+
+/* .hoy-borde {
+  border: 3px solid orange;
+  border-radius: 12px;
+} */
+
+.day.today-highlight,
+.hoy-borde {
+  border: 3px solid orange;
+  border-radius: 12px;
+  color: #000 !important;
+  /* negro para el número */
+  font-weight: bold;
+  /* opcional: destacar más */
+  background-color: #f9fcfc;
+  /* opcional: fondo claro */
+}
+
+.plus {
+  align-items: center;
+}

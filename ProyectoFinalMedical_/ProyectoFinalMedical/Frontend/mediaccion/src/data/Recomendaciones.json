@@ -1,0 +1,158 @@
+
+{
+  "0-12": {
+    "hombre": [
+      {
+        "title": "Asma en niños ",
+        "content": "Para reducir crisis de asma en niños, es importante mantener un ambiente libre de polvo, ácaros y humedades, ya que son desencadenantes comunes. Se recomienda ventilar las habitaciones diariamente, evitar el uso excesivo de ambientadores y asegurarse de que el niño siga su medicación habitual. La actividad física moderada, controlada por especialistas, también ayuda a fortalecer la función pulmonar."
+      },
+      {
+        "title": "Alergias en niños ",
+        "content": "Las alergias infantiles requieren identificar los desencadenantes, que suelen incluir pólenes, ciertos alimentos o pelo de animales. Es fundamental trabajar con un pediatra para disponer de un plan de acción ante reacciones. Mantener la casa limpia, evitar alfombras que acumulen polvo y enseñar al niño a lavarse las manos con frecuencia reduce considerablemente los episodios."
+      },
+      {
+        "title": "Infecciones respiratorias ",
+        "content": "Para prevenir infecciones respiratorias, se recomienda fomentar hábitos de higiene como lavarse las manos, cubrirse al toser y evitar compartir botellas o cubiertos. Una buena alimentación rica en vitaminas puede mejorar el sistema inmunitario. También es útil ventilar el hogar, evitar cambios bruscos de temperatura y mantener las vacunas al día."
+      }
+    ],
+    "mujer": [
+      {
+        "title": "Asma en niñas ",
+        "content": "En niñas con asma, se recomienda mantener un control regular con el pediatra para ajustar medicaciones según el crecimiento. Evitar el contacto con humo de tabaco es esencial, así como asegurar un ambiente limpio. La práctica de actividades acuáticas puede mejorar su capacidad pulmonar y ayudar a gestionar mejor los episodios de dificultad respiratoria."
+      },
+      {
+        "title": "Alergias alimentarias ",
+        "content": "Para las alergias alimentarias, es clave leer siempre etiquetas, evitar la contaminación cruzada en la cocina y enseñar a la niña a reconocer los primeros síntomas. Se recomienda tener siempre a mano los medicamentos indicados por el especialista. La educación familiar y escolar también es fundamental para prevenir exposiciones accidentales."
+      },
+      {
+        "title": "Otitis ",
+        "content": "La otitis es común en niñas pequeñas, especialmente tras catarros o baños. Para prevenirla se recomienda secar bien los oídos después de nadar, evitar usar bastoncillos internos y mantener una buena hidratación. También conviene controlar los resfriados con atención, ya que la congestión nasal suele desencadenar este tipo de infecciones."
+      }
+    ]
+  },
+
+  "13-18": {
+    "hombre": [
+      {
+        "title": "Acné ",
+        "content": "El acné en adolescentes puede controlarse con una rutina de limpieza suave, evitando productos demasiado abrasivos. Es importante no manipular los granos para impedir infecciones o cicatrices. Mantener una dieta equilibrada, rica en frutas y verduras, favorece la salud de la piel. Dormir bien y gestionar el estrés también mejora notablemente la condición."
+      },
+      {
+        "title": "Ansiedad en adolescentes ",
+        "content": "Muchos adolescentes sufren ansiedad por estudios, cambios hormonales o presión social. Se recomienda fomentar la comunicación abierta con familiares, promover actividades deportivas y técnicas de relajación como respiración o mindfulness. Mantener horarios regulares de sueño y limitar la exposición a pantallas ayuda a estabilizar el estado emocional y reducir síntomas."
+      },
+      {
+        "title": "Lesiones deportivas ",
+        "content": "Para evitar lesiones deportivas, los adolescentes deben realizar calentamientos adecuados antes de actividad física y estiramientos posteriores. Es fundamental usar calzado apropiado y progresar gradualmente en intensidad. Mantener una buena hidratación y respetar los tiempos de descanso ayuda a prevenir sobrecargas musculares o lesiones graves durante entrenamientos."
+      }
+    ],
+    "mujer": [
+      {
+        "title": "Anemia ferropénica ",
+        "content": "Las chicas adolescentes pueden ser propensas a anemia debido a la menstruación. Se recomienda consumir alimentos ricos en hierro como legumbres, espinacas o carnes magras, acompañados de vitamina C para mejorar la absorción. Es importante evitar exceso de té o café tras las comidas. Si los síntomas persisten, debe evaluarse suplemento médico."
+      },
+      {
+        "title": "Acné hormonal ",
+        "content": "El acné hormonal puede mitigarse con una rutina de limpieza adecuada y evitando el uso de maquillaje comedogénico. La actividad física regular, una dieta equilibrada y una hidratación constante mejoran el equilibrio hormonal. Es importante no manipular los granos y consultar con un dermatólogo para tratamientos según la severidad."
+      },
+      {
+        "title": "Trastornos menstruales ",
+        "content": "Los trastornos menstruales pueden controlarse con hábitos saludables, buen descanso y reducción del estrés. Mantener un registro del ciclo ayuda a detectar patrones irregulares. En mujeres deportistas, una ingesta calórica insuficiente puede afectar la menstruación, por lo que es importante equilibrar nutrición y actividad física. Consultar a un especialista es recomendable."
+      }
+    ]
+  },
+
+  "19-39": {
+    "hombre": [
+      {
+        "title": "Dolor lumbar ",
+        "content": "El dolor lumbar suele deberse a malas posturas o sedentarismo. Es fundamental fortalecer la musculatura del core mediante ejercicios regulares y evitar estar sentado muchas horas sin pausas. Una postura adecuada al trabajar y un colchón adecuado ayudan a prevenir molestias. Levantar objetos pesados correctamente también es clave."
+      },
+      {
+        "title": "Ansiedad y estrés ",
+        "content": "Para el estrés en adultos jóvenes, se recomienda establecer límites laborales, utilizar técnicas de gestión de tiempo y practicar ejercicios de respiración o actividad física diaria. Dormir bien mejora la capacidad de recuperación emocional. También resulta útil planificar momentos de ocio y desconexión para evitar sobrecargas mentales."
+      },
+      {
+        "title": "Hipertensión temprana ",
+        "content": "La hipertensión en adultos jóvenes puede controlarse reduciendo el consumo de sal, evitando alimentos ultraprocesados y practicando ejercicio regular. Mantener un peso saludable y controlar el estrés también reduce significativamente los niveles de presión arterial. Se recomienda medir la tensión periódicamente y evitar el tabaco y el alcohol en exceso."
+      }
+    ],
+    "mujer": [
+      {
+        "title": "Migrañas ",
+        "content": "Las migrañas pueden gestionarse identificando desencadenantes como estrés, ciertos alimentos o falta de sueño. Llevar un registro ayuda a reconocer patrones. Dormir con horario regular, hidratarse y evitar el exceso de pantallas reduce la frecuencia. Crear un ambiente tranquilo y oscuro durante los episodios proporciona alivio sintomático."
+      },
+      {
+        "title": "Ansiedad ",
+        "content": "Las mujeres jóvenes suelen experimentar ansiedad relacionada con responsabilidades laborales y personales. Las técnicas de respiración, actividad física regular y una buena organización del tiempo ayudan a equilibrar el estado mental. Es recomendable limitar la cafeína, practicar hobbies relajantes y mantener una red de apoyo social estable."
+      },
+      {
+        "title": "Infecciones urinarias ",
+        "content": "Para evitar infecciones urinarias, se recomienda beber agua con regularidad, no aguantar la orina y mantener una higiene adecuada. Orinar después de relaciones sexuales ayuda a evitar bacterias. También es importante evitar ropa interior demasiado ajustada y preferir tejidos transpirables. Si las infecciones son recurrentes, debe evaluarse con un especialista."
+      }
+    ]
+  },
+
+  "40-64": {
+    "hombre": [
+      {
+        "title": "Diabetes tipo 2 ",
+        "content": "La prevención y control de diabetes requieren mantener una dieta equilibrada baja en azúcares simples y realizar ejercicio al menos 150 minutos por semana. La reducción de peso corporal mejora la sensibilidad a la insulina. Es importante revisar glucemias de forma regular y evitar el consumo de bebidas azucaradas o ultraprocesados."
+      },
+      {
+        "title": "Hipertensión arterial ",
+        "content": "Para reducir la presión arterial, se recomienda disminuir el consumo de sal, mantener una actividad física constante y evitar alcohol en exceso. Dormir bien y controlar el estrés también son fundamentales. Consumir frutas, verduras y alimentos ricos en potasio ayuda a estabilizar los valores. La monitorización periódica es clave para prevención."
+      },
+      {
+        "title": "Colesterol alto ",
+        "content": "El colesterol elevado debe abordarse con una dieta baja en grasas saturadas y rica en fibra. Se recomienda incluir avena, legumbres, frutos secos y pescados azules. La práctica regular de ejercicio y evitar el tabaco también son esenciales. Reducir fritos y bollería industrial ayuda a mejorar los niveles de colesterol LDL."
+      }
+    ],
+    "mujer": [
+      {
+        "title": "Osteoporosis temprana ",
+        "content": "Para la osteoporosis, se recomienda consumir suficiente calcio y vitamina D, ya sea mediante dieta o exposición solar moderada. Actividades como caminar o ejercicios de fuerza ayudan a fortalecer huesos. Evitar el tabaco y el alcohol es fundamental, así como realizar revisiones periódicas, especialmente tras cambios hormonales importantes como la perimenopausia."
+      },
+      {
+        "title": "Hipotiroidismo ",
+        "content": "El hipotiroidismo requiere seguir estrictamente el tratamiento farmacológico pautado y realizar controles periódicos. Una dieta equilibrada rica en yodo puede ayudar, pero siempre bajo supervisión médica. Mantener un estilo de vida activo mejora la energía y el bienestar general. Es importante evitar automedicarse o interrumpir el tratamiento."
+      },
+      {
+        "title": "Ansiedad crónica ",
+        "content": "La ansiedad crónica puede manejarse con técnicas de relajación, ejercicio regular y una buena organización de prioridades. Limitar el consumo de café y alcohol ayuda a evitar picos de estrés. Fomentar el descanso adecuado y delegar responsabilidades cuando sea necesario mejora la salud mental y emocional a largo plazo."
+      }
+    ]
+  },
+
+  "65+": {
+    "hombre": [
+      {
+        "title": "Enfermedad cardiovascular ",
+        "content": "Para prevenir eventos cardiovasculares, los adultos mayores deben controlar estrictamente la presión arterial, colesterol y glucosa. Es recomendable practicar actividad física ligera, como caminar diariamente, y mantener una dieta Mediterránea. Evitar tabaco y alcohol resulta esencial. Las revisiones médicas periódicas permiten detectar problemas antes de que se agraven."
+      },
+      {
+        "title": "Artrosis ",
+        "content": "La artrosis mejora con ejercicios de baja carga como natación o caminar, que reducen el dolor sin dañar las articulaciones. Mantener un peso adecuado disminuye la presión sobre rodillas y caderas. Aplicar calor local puede aliviar molestias. Es importante realizar movimientos suaves diarios para mantener la movilidad."
+      },
+      {
+        "title": "Pérdida auditiva ",
+        "content": "Para la pérdida auditiva se recomienda realizar controles otorrinolaringológicos regulares y evitar la exposición prolongada a ruidos fuertes. Utilizar audífonos cuando son necesarios mejora la calidad de vida y la comunicación social. Mantener los oídos limpios sin usar bastoncillos internos previene infecciones que pueden empeorar el problema."
+      }
+    ],
+    "mujer": [
+      {
+        "title": "Osteoporosis ",
+        "content": "La osteoporosis en mujeres mayores requiere una ingesta adecuada de calcio y vitamina D, así como actividad física regular enfocada en fuerza y equilibrio. Evitar caídas es esencial, por lo que se recomienda tener buena iluminación en casa y usar calzado adecuado. Las revisiones densitométricas permiten ajustar tratamientos."
+      },
+      {
+        "title": "Hipertensión ",
+        "content": "La hipertensión se controla reduciendo sal, evitando grasas saturadas y manteniendo actividad diaria moderada. Dormir adecuadamente y manejar el estrés también ayudan. Las mujeres mayores deben revisar su medicación porque algunos tratamientos pueden influir en la presión arterial. Controlar el peso y beber suficiente agua beneficia la salud cardíaca."
+      },
+      {
+        "title": "Depresión en la vejez ",
+        "content": "La depresión puede aparecer por soledad, pérdida de rutinas o factores biológicos. Es importante mantener vínculos sociales, participar en actividades grupales y establecer rutinas diarias estimulantes. La actividad física suave mejora el ánimo y la salud general. El apoyo familiar y las revisiones médicas contribuyen a un manejo adecuado."
+      }
+    ]
+  }
+}
+

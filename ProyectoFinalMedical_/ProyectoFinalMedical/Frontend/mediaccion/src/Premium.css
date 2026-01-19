@@ -1,0 +1,57 @@
+/* Estilos para la Tarjeta Premium destacada (Diseño 1) */
+.premium-card-1 {
+    /* Fondo degradado vibrante (Violeta) */
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); 
+    color: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 20px;
+    /* Sombra intensa para destacar */
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    user-select: none;
+}
+
+.premium-card-1:hover {
+    transform: translateY(-3px); /* Efecto 3D al pasar el ratón */
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+}
+
+.premium-card-1 .title-premium {
+    font-weight: 800;
+    font-size: 1.25rem; /* Más grande y negrita */
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.premium-card-1 .subtitle-premium {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
+    max-width: 90%;
+}
+
+.premium-card-1 .action-btn {
+    /* Color Naranja como acento y Call to Action */
+    background: #f59e0b; 
+    color: #333;
+    padding: 10px 24px;
+    border-radius: 9999px; /* Botón píldora */
+    font-weight: 700;
+    border: none;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.premium-card-1 .action-btn:hover {
+    background: #fbbf24;
+}

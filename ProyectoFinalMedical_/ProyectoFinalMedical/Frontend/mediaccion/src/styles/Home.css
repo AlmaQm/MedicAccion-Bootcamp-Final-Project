@@ -1,0 +1,379 @@
+/*DEFINICIÓN DE VARIABLES DE COLOR*/
+
+
+:root {
+    --color-primary-violet: #8b5cf6;
+    /* Violeta (Botones, Título) */
+    border: #f59e0b;
+    /* Naranja/Ámbar (Día Hoy, Énfasis) */
+    --color-card-green: #10b981;
+    /* Verde Esmeralda */
+    --color-text-gray: #6b7280;
+    /* Gris para texto secundario */
+    --color-bg-light: #f3f4f6;
+    /* Gris muy claro para fondo de día */
+    --color-gray-dark: #1f2937;
+    /* Gris muy oscuro para texto principal */
+    --color-gray-light: #e5e7eb;
+    /* Gris para hover */
+}
+
+/*HOME - GENERAL Y HEADER*/
+/*Hao-
+.home-app {
+    padding: 1rem;
+    padding-bottom: 5rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9fafb;
+    min-height: 100vh;
+}
+*/
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    /* Alma-linea separadora */
+    margin-bottom: 1rem;
+}
+
+.header-left {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.date {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 1rem;
+    /* Alma-1rem entre logo y mes */
+}
+
+/* CALENDARIO HORIZONTAL (REDISEÑADO CON COLORES DEL HOME) */
+
+.today-highlight {
+    background-color: var(--color-accent-amber) !important;
+    color: white !important;
+    font-weight: 700;
+    box-shadow: var(--shadow-light);
+}
+
+
+.calendar-scroll {
+    display: flex;
+    overflow-x: scroll;
+    padding: 12px 0;
+    gap: 10px;
+
+    /* Ocultar barra de desplazamiento */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.calendar-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tarjeta de Día Individual */
+.calendar-day {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 75px;
+    padding: 8px;
+    border-radius: 14px;
+    background-color: var(--color-bg-light);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: none;
+    scroll-snap-align: start;
+}
+
+.calendar-day:hover {
+    background-color: var(--color-gray-light);
+    transform: scale(1.05);
+}
+
+/* Estilo para el día de hoy con color NARANJA/AMBAR */
+.calendar-day.today {
+    border: 2px solid rgb(255, 196, 0) !important;
+    /* NO PONER background aquí */
+    /* NO USAR !important en background */
+    transform: scale(1.08);
+}
+
+/* Estilos de texto */
+.day-name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: var(--color-text-gray);
+}
+
+.calendar-day.today .day-name {
+    color: rgb(8, 0, 0);
+}
+
+.day-number {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-gray-dark);
+}
+
+.calendar-day.today .day-number {
+    color: rgb(17, 1, 1);
+}
+
+
+/*CONTENIDO DEL HOME (Secciones abajo del calendario)*/
+
+.delay-block {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: white !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delay-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-dark) !important;
+    margin-bottom: 1.5rem;
+}
+
+.delay-title span {
+    color: var(--color-primary-violet) !important;
+}
+
+.botones-home {
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+
+.btn-register {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    background-color: #659FA6;
+    color: #f9f6f6;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+
+
+}
+
+.btn-register.hover {
+    background-color: #7c3aed;
+}
+
+.daily-tips h3,
+.delay-extras h4,
+.cycle-section h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-gray-dark) !important;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+
+}
+
+/* MEDICAMENTOS DIARIOS */
+.tip-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    border-left-width: 4px;
+    width: 160px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.prueba {
+    display: inline-flex;
+}
+
+.tips-scroll {
+    display: flex;
+    overflow-x: scroll;
+    gap: 12px;
+    padding-bottom: 8px;
+}
+
+/* NOTICIAS */
+.extras-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.extra p {
+    font-size: 0.8rem;
+    color: #374151 !important;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+/* SUGERENCIAS */
+.titulo-sugerencias {
+    margin-bottom: 30px;
+}
+
+.cycle-scroll {
+    display: flex;
+    overflow-x: scroll;
+    gap: 12px;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+}
+
+.cycle-card {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-size: 12px;
+    height: 165px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.card-img {
+    width: 97%;
+    height: 80px;
+    border-radius: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+}
+
+
+.placeholder-premium {
+    background-image: linear-gradient(45deg, #f59e0b, #f97316) !important;
+}
+
+/* Modal / Popup styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20000;
+    /* elevado para estar por encima de otros elementos */
+}
+
+.modal {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.25rem;
+    max-width: 520px;
+    width: calc(100% - 48px);
+    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.2);
+    position: relative;
+    z-index: 20001;
+}
+
+.modal h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.125rem;
+}
+
+.modal p {
+    margin: 0;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.modal-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.dia-completo {
+    background-color: #4ade80;
+    color: #000;
+}
+
+.dia-incompleto {
+    background-color: #f87171;
+    color: #fff;
+}
+
+.dia-registrado {
+    background-color: #facc15;
+    color: #000;
+
+}
+
+.btn-register {
+    display: inline-flex;
+    /* Para alinear ícono y texto */
+    align-items: center;
+    /* Centrar verticalmente */
+    padding: 10px 16px;
+    gap: 8px;
+    background-color: #659FA6;
+    /* Verde */
+    color: #faf4f4;
+    /* Color del texto */
+    border-radius: 6px;
+    text-decoration: none;
+    /* Quitar subrayado */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: #7c4dff;
+}
+
+.meds-today-list {
+    display: flex;
+    gap: 10px;
+
+}

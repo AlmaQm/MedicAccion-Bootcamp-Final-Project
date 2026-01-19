@@ -1,0 +1,95 @@
+/* CAJA DONDE APARECEN LOS MENSAJES DEL CHAT */
+.chatBox {
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* CADA MENSAJE */
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 4px 0;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+/* CONTENEDOR DEL INPUT Y BOTÓN */
+.inputRow {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .inputRow{
+    margin-bottom: 60px;
+  }
+}
+
+/* INPUT DEL USUARIO */
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* BOTÓN DE ENVIAR */
+.button {
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+/* Pantallas mayores a 768px */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 30px;
+  }
+  .chatBox {
+    height: 500px;
+  }
+  .input {
+    font-size: 18px;
+  }
+  .button {
+    font-size: 18px;
+  }
+}
+
+/* Pantallas mayores a 1024px */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+/* Mensaje del usuario */
+.user-msg {
+  align-self: flex-end;
+  background-color: #bdbdbdff;
+  color: #0b0101ff;
+  white-space: pre-wrap;
+}
+
+/* Mensaje del bot */
+.bot-msg {
+  align-self: flex-start;
+  background-color: #d0f0c0;
+  color: #000;
+  white-space: pre-wrap;
+}
+

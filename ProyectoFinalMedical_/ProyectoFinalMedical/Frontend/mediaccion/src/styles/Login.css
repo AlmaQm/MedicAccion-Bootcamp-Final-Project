@@ -1,0 +1,163 @@
+/* ================================
+   LOGIN PAGE — MOBILE FIRST DESIGN
+   ================================ */
+
+.login-container {
+    --bg-color-custom: #f1f1f1;
+    --light-grey-custom: #CCC;
+    --medium-grey-custom: #666;
+    --dark-grey-custom: #4a768e;
+    --text-color-custom: #010101;
+    --border-radius-lg-custom: 30px;
+    --border-radius-sm-custom: 8px;
+  
+    background-color: #fff;
+    color: #000;
+    min-height: calc(100vh - 80px); /* Ajusta la altura si tu navbar mide 80px, por ejemplo */
+    width: 375px; 
+    margin: 0 auto;
+    padding: 20px 20px 0 20px; /* Padding inferior se maneja por el contenido */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+
+
+/* === CARD PRINCIPAL === */
+.login-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 380px;
+  padding: 28px 24px;
+  color: #659fa6;
+  animation: fadeIn 0.6s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* ADICION: transición para efecto hover (movido aquí desde duplicado) */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* === TITULOS === */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #659fa6;
+  margin-bottom: 0.4rem;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  color: #80b7be;
+  margin-bottom: 1.5rem;
+}
+
+/* === FORMULARIO === */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  color: #659fa6;
+  font-weight: 500;
+}
+
+.login-form input {
+  border: 1px solid #659fa6;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.login-form input:focus {
+  border-color: #80b7be;
+  box-shadow: 0 0 0 3px rgba(101, 159, 166, 0.25);
+}
+
+/* === RECORDAR SESIÓN === */
+.remember-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.remember-row input[type="checkbox"] {
+  accent-color: #659fa6;
+}
+
+/* === MENSAJE DE ERROR === */
+.error-msg {
+  color: #d9534f;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* === BOTÓN DE LOGIN === */
+.login-btn {
+  background-color: #659fa6;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.login-btn:hover {
+  background-color: #558c92;
+  transform: scale(1.03);
+}
+
+/* === FOOTER === */
+.login-footer {
+  margin-top: 20px;
+  color: #80b7be;
+  font-size: 0.85rem;
+}
+
+/* ================================
+   RESPONSIVE — TABLET & DESKTOP
+   ================================ */
+@media (min-width: 600px) {
+  .login-card {
+    padding: 40px 48px;
+    max-width: 420px;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .login-subtitle {
+    font-size: 1rem;
+  }
+
+  .login-btn {
+    padding: 14px;
+    font-size: 1.05rem;
+  }
+}
+

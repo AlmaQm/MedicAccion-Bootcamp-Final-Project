@@ -1,0 +1,200 @@
+
+/* ================================
+   PERFIL PAGE — MOBILE FIRST DESIGN
+   ================================ */
+.main-app-perfil {
+  min-height: 100vh;
+  padding: 15px;
+  /* max-width: 450px; Limitar el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centrar en pantallas grandes */
+
+  /*nuevo*/
+  background-color: #f9fafb;
+  max-width: 28rem;
+
+  border-radius: 20px;
+}
+
+.perfil-container {
+  
+    --bg-color-custom: #f1f1f1;
+    --light-grey-custom: #CCC;
+    --medium-grey-custom: #666;
+    --dark-grey-custom: #4a768e;
+    --text-color-custom: #010101;
+    --border-radius-lg-custom: 30px;
+    --border-radius-sm-custom: 8px;
+  
+    background-color: #fff;
+    color: #000;
+    min-height: calc(100vh - 80px); /* Ajusta la altura si tu navbar mide 80px, por ejemplo */
+    width: 375px; 
+    margin: 0 auto;
+    padding: 20px 20px 0 20px; /* Padding inferior se maneja por el contenido */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.perfil-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  padding: 24px;
+  color: #659fa6;
+  animation: fadeIn 0.5s ease;
+  margin-bottom: 65px;
+}
+
+.perfil-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.perfil-icon {
+  font-size: 4rem;
+  color: #659fa6;
+}
+
+.perfil-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #659fa6;
+  margin-top: 0.5rem;
+}
+
+.perfil-section {
+  margin-bottom: 1.8rem;
+}
+
+.perfil-section p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #3a7078;
+}
+
+/* === BOTONES === */
+.edit-btn,
+.save-btn {
+  background-color: #659fa6;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background-color: #7c4dff;
+  transform: scale(1.03);
+}
+
+/* === INPUTS DE EDICIÓN === */
+.perfil-section input {
+  width: 100%;
+  border: 1px solid #659fa6;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.perfil-section input:focus {
+  border-color: #80b7be;
+  box-shadow: 0 0 0 3px rgba(101, 159, 166, 0.25);
+}
+
+.save-btn:disabled {
+  background-color: #b5b5b5; /* gris */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* === INPUTS DE EDICIÓN === */
+.perfil-section input {
+  width: 100%;
+  border: 1px solid #659fa6;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.perfil-section input:focus {
+  border-color: #80b7be;
+  box-shadow: 0 0 0 3px rgba(101, 159, 166, 0.25);
+}
+
+/*FORM TELEFONO*/
+/* Contenedor que une ambos campos */
+.phone-combo {
+  display:flex;
+  align-items:stretch;
+  gap:var(0);
+  overflow:hidden;
+  border: 1px solid #659fa6;
+  border-radius: 12px;
+  padding: 1px 1px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 45px;
+}
+.phone-combo .select-wrap select:focus {
+  border-color: #030303;
+  box-shadow: 0 0 0 3px rgba(101, 159, 166, 0.25);
+}
+/*input-tel*/
+.phone-combo input {
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  flex:1;
+  height: 100%;
+
+}
+/* Select (país) */
+.phone-combo select {
+  appearance: none;
+  border: none;
+  padding: 10px 14px;
+  padding-right: 25px; /* espacio para flecha */
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* Flecha simple para select (solo visual) */
+.phone-combo .select-wrap{
+  position:relative;
+  display:flex;
+  align-items:center;
+  background:transparent;
+  border-right:1px solid var(#cbd5e1);
+}
+
+.phone-combo .select-wrap::after{
+  content: "▾";
+  position:absolute;
+  right:10px;
+  pointer-events:none;
+  font-size:12px;
+  color:#334155;
+}
